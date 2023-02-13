@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Account</title>
+
+</head>
+
+<body>
+    <main>
+
+
+
+    <form action="registrar.php" method="post" class="formulario" id="formulario">
+
+
+        <h2 class="form_titulo">Create account</h2>
+
+
+
+        <!--    GRUPO   NOMBRE    -->
+        <div class="formulario_grupo" id="grupo_nombre">
+            <label for="nombre" class="formulario_label">Nombre</label>
+            <div class="formulario_grupo-input"></div>
+                 <input class="formulario_input" type="text" name="nombre" id="nombre" />
+                <!--  <img src="error-icon.svg" class="formulario__validacion-estado">  -->
+            </div>
+            <p class="formulario_input-error">Rellene su nombre</p>
+        </div>
+
+
+
+
+        <!--    GRUPO   EMAIL    -->
+        <div class="formulario_grupo" id="grupo_email">
+            <label for="email" class="formulario_label">Email</label>
+            <div class="formulario_grupo-input"></div>
+                 <input class="formulario_input" type="email" name="email" id="email" />
+                <!--  <img src="error-icon.svg" class="formulario__validacion-estado">  -->
+            </div>
+        <p class="formulario_input-error">Email inválido</p>
+        </div>
+
+
+
+
+        <!--    GRUPO   CONTRASEÑA    -->
+        <div class="formulario_grupo" id="grupo_password">
+            <label for="password" class="formulario_label">Clave</label>
+            <div class="formulario_grupo-input"></div>
+                 <input class="formulario_input" type="password" name="password" id="password" />
+                <!--  <img src="error-icon.svg" class="formulario__validacion-estado">  -->
+            </div>
+        <p class="formulario_input-error">Debe tener más de 8 caracteres entre letras y números</p>
+        </div>
+
+
+
+
+        <!--    GRUPO   CONTRASEÑA2    -->
+        <div class="formulario_grupo" id="grupo_password2">
+            <label for="password2" class="formulario_label">Confirme su clave</label>
+            <div class="formulario_grupo-input"></div>
+                 <input class="formulario_input" type="password" name="password2" id="password2" />
+                <!-- <img src="error-icon.svg" class="formulario__validacion-estado">  -->
+            </div>
+        <p class="formulario_input-error">Las contraseñas no coinciden</p>
+        </div>
+
+
+
+
+         <!--    GRUPO   BOTON    -->
+         <div class="formulario_grupo-btn"></div>
+            <button type="submit" class="formulario_btn">Enviar</button>
+            <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+
+
+
+
+        <!-- Grupo: Mensaje error -->
+
+		<div class="formulario_mensaje" id="formulario_mensaje">
+			 Todos los campos deben ser rellenados correctamente! </p>
+		</div>
+
+
+        
+
+
+     </form>  
+     </main>
+
+     <script src="index.js"></script>    
+
+ </body>
+ </html>
